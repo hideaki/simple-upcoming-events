@@ -1,6 +1,6 @@
 === Simple Upcoming Events ===
 Contributors: hideaki
-Tags: upcoming, events, posts
+Tags: widget, Post, posts, plugin, sidebar, upcoming, events
 Stable tag: trunk
 
 Displays a list of posts for upcoming events. 
