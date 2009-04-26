@@ -14,3 +14,6 @@ Depends on NO external services like Google Calendar.
 
 == Usage ==
 When you publish a new post, add a Custom Field named "date", and set its value to the date the event will take place (i.e. "2009-05-02"). That's it!
+
+== Version History ==
+1.0.1 - Removed usage of date_create, which was added in PHP 5.2, to support PHP 4.

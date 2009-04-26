@@ -2,7 +2,7 @@
 /*
 Plugin Name: Simple Upcoming Events
 Description: Displays a list of posts for upcoming events. Depends on NO external services.
-Version: 1.0.0
+Version: 1.0.1
 Author: Hideaki Hayashi
 Author URI: http://tagaabo.com/
 */
@@ -33,7 +33,7 @@ function wp_widget_simple_upcoming_events_register() {
       foreach ($posts as $post) {
         $post_title = stripslashes($post->post_title);
         $permalink = get_permalink($post->ID);
-        $event_date = date_create($post->event_date)->format($date_format);
+        $event_date = date($date_format, strtotime($post->event_date));
         $output .= '<li>' . $event_date . ' <a href="' . $permalink . '">' . htmlspecialchars($post_title) . '</a>';
         $output .= '</li>';
       }
